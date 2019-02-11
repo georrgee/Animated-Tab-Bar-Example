@@ -9,12 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var startButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupButtonUI()
     }
-
-
+    
+   private func setupButtonUI() {
+        startButton.layer.cornerRadius = 12.0
+        startButton.layer.masksToBounds = true
+    }
 }
 

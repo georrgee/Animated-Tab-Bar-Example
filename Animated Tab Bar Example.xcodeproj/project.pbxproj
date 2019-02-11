@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A8FEAEC0EAB295F36D066B3 /* Pods_Animated_Tab_Bar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38B6DCB9178FDE8BECFDE56 /* Pods_Animated_Tab_Bar_Example.framework */; };
 		369FFCD4221218710003D35A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369FFCD3221218710003D35A /* AppDelegate.swift */; };
 		369FFCD6221218710003D35A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369FFCD5221218710003D35A /* ViewController.swift */; };
 		369FFCD9221218710003D35A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369FFCD7221218710003D35A /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		369FFCDA221218720003D35A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		369FFCDD221218720003D35A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		369FFCDF221218720003D35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C5B65BF517BEC897875A5F8 /* Pods-Animated Tab Bar Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animated Tab Bar Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Animated Tab Bar Example/Pods-Animated Tab Bar Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B530C5717F5528891E71E5 /* Pods-Animated Tab Bar Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animated Tab Bar Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Animated Tab Bar Example/Pods-Animated Tab Bar Example.release.xcconfig"; sourceTree = "<group>"; };
+		E38B6DCB9178FDE8BECFDE56 /* Pods_Animated_Tab_Bar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animated_Tab_Bar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8FEAEC0EAB295F36D066B3 /* Pods_Animated_Tab_Bar_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B1401A6AF7B6E0939BF980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E38B6DCB9178FDE8BECFDE56 /* Pods_Animated_Tab_Bar_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		369FFCC7221218710003D35A = {
 			isa = PBXGroup;
 			children = (
 				369FFCD2221218710003D35A /* Animated Tab Bar Example */,
 				369FFCD1221218710003D35A /* Products */,
+				E1285104AE4D02240F19FBCE /* Pods */,
+				13B1401A6AF7B6E0939BF980 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Animated Tab Bar Example";
 			sourceTree = "<group>";
 		};
+		E1285104AE4D02240F19FBCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C5B65BF517BEC897875A5F8 /* Pods-Animated Tab Bar Example.debug.xcconfig */,
+				C8B530C5717F5528891E71E5 /* Pods-Animated Tab Bar Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 369FFCE2221218720003D35A /* Build configuration list for PBXNativeTarget "Animated Tab Bar Example" */;
 			buildPhases = (
+				BCD01AFDC267AF2025450C42 /* [CP] Check Pods Manifest.lock */,
 				369FFCCC221218710003D35A /* Sources */,
 				369FFCCD221218710003D35A /* Frameworks */,
 				369FFCCE221218710003D35A /* Resources */,
+				18C1428C919DCA8080C3ADCD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18C1428C919DCA8080C3ADCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Animated Tab Bar Example/Pods-Animated Tab Bar Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CBFlashyTabBarController/CBFlashyTabBarController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CBFlashyTabBarController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Animated Tab Bar Example/Pods-Animated Tab Bar Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD01AFDC267AF2025450C42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Animated Tab Bar Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		369FFCCC221218710003D35A /* Sources */ = {
@@ -280,6 +345,7 @@
 		};
 		369FFCE3221218720003D35A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5B65BF517BEC897875A5F8 /* Pods-Animated Tab Bar Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +364,7 @@
 		};
 		369FFCE4221218720003D35A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8B530C5717F5528891E71E5 /* Pods-Animated Tab Bar Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
